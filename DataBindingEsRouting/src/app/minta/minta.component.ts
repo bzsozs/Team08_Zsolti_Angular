@@ -11,5 +11,19 @@ export class MintaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  keszito: string = "Bojti Zsolt";
+  utvonal: string = "https://angular.io/";
+
+  uzenet(): void {
+    alert("Ez egy event handleres függvény volt");
+  }
+
+  modosito(): void {
+    this.keszito = "Minta Márton";
+  }
+
+  aOldal: number = 1;
+
+
 
 }

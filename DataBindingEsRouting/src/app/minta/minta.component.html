@@ -1,1 +1,28 @@
-<p>Data Binding Minta aloldal</p>
+<h1>Data Binding Minta aloldal</h1>
+<h2>Interpolation</h2>
+<p>Az oldalt készítette: {{keszito}}</p>
+<a href={{utvonal}}>Angular honlap</a>
+
+
+<h2>Property Binding</h2>
+<a [href]="utvonal">Angular honlap</a>
+
+
+<h2>Event Binding</h2>
+<div>
+    <button class="btn btn-primary m-2" (click)="uzenet()">Event Handler - Üzenet</button>
+    <button class="btn btn-secondary m-2" (click)="modosito()">Event Handler - Módosító</button>
+</div>
+
+
+<h2>Kétirányú Data Binding</h2>
+
+<h3>Négyzet kerület terület</h3>
+
+<div class="form-group">
+    <label for="oldalA">Az a oldal mérete</label>
+    <input type="number" [(ngModel)]="aOldal" id="oldalA" class="form-control">
+</div>
+<p>A négyzet "a" oldalának mérete: {{aOldal}} cm</p>
+<p>A négyzet kerülete: {{4*aOldal}} cm</p>
+<p>A négyzet területe:{{aOldal*aOldal}} cm<sup>2</sup></p>
