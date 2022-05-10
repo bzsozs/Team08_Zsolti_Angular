@@ -26,3 +26,22 @@
 <p>A négyzet "a" oldalának mérete: {{aOldal}} cm</p>
 <p>A négyzet kerülete: {{4*aOldal}} cm</p>
 <p>A négyzet területe:{{aOldal*aOldal}} cm<sup>2</sup></p>
+
+<p>Tömbünk legelső eleme: {{bevasarlolista[0]}}</p>
+
+<ul>
+    <li *ngFor="let gyumolcs of bevasarlolista">
+        {{gyumolcs}}
+    </li>
+
+</ul>
+
+<p>{{interfaceElem.nev}} [{{interfaceElem.kor}}] Beosztasa: {{interfaceElem.beosztas}}</p>
+<!--hivatkozás az interface-re-->
+
+<ul>
+    <li *ngFor="let dolgozo of interfaceTomb">
+        {{dolgozo.nev}} ({{dolgozo.fizetes}}.-) Forint
+
+    </li>
+</ul>

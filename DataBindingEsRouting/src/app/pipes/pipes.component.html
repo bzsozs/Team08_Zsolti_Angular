@@ -1,0 +1,48 @@
+<h1>Pipe-ok használata</h1>
+
+<h2>Szövegformázó elemek</h2>
+<h3>Sima szöveg {{mintaSzoveg}}</h3>
+<p>Nagybetűssé alakított szöveg: {{mintaSzoveg | uppercase}}</p>
+<p>Kisbetűssé alakított szöveg: {{mintaSzoveg | lowercase}}</p>
+<p>Nagy kezdőbetűssé (címmé) alakított szöveg: {{mintaSzoveg | titlecase}}</p>
+
+<h2>Számok fromázása</h2>
+
+<h3>Eredeti szám {{valosSzam}}</h3>
+<p>Egész számmá kerekítés: {{valosSzam | number: '1.0-0'}}</p>
+<p>Vezető nullák beszúrása : {{valosSzam | number: '6.0-0'}}</p>
+<p>Tizedes értékek számának megadása (2): {{valosSzam | number: '1.0-2'}}</p>
+
+<h2>Százalékos formátum megadása</h2>
+<h3>Eredeti százalékos érték: {{szazalekosErtek}}</h3>
+<p>Egész százalékos érték: {{szazalekosErtek | percent}}</p>
+<p>Egész százalékos érték: {{szazalekosErtek | percent: '1.0-0'}}</p>
+<p>Egész százalékos érték 2 tizedessel: {{szazalekosErtek | percent: '1.0-2'}}</p>
+
+<h2>Pénz formátum megadása</h2>
+<h3>Eredeti pénz érték: {{penzErtek}}</h3>
+<p>Dollárban kifejezve: {{penzErtek | currency: 'USD':'symbol':'1.0-2'}}</p>
+<p>Euróban kifejezve: {{penzErtek | currency: 'EUR'}}</p>
+<p>Fontban kifejezve: {{penzErtek | currency: 'GBP'}}</p>
+<p>Forintban kifejezve: {{penzErtek | currency: 'HUF'}}</p>
+
+<h2>Idő megjelenítésének formátumai</h2>
+<h3>Eredeti idő formátum: {{datumErtek}}</h3>
+<h4>Előre beállított minták</h4>
+<p>Rövid teljes dátum/idő megadása: {{datumErtek | date:'short'}}</p>
+<p>Hosszú teljes dátum/idő megadása: {{datumErtek | date:'long'}}</p>
+<p>Rövid dátum megadása: {{datumErtek | date:'shortDate'}}</p>
+<p>Teljes dátum megadása: {{datumErtek | date:'fullDate'}}</p>
+<p>Rövid idő megadása: {{datumErtek | date:'shortTime'}}</p>
+<p>Hoszzú idő megadása: {{datumErtek | date:'fullTime'}}</p>
+
+<h4>Egyedileg beállított minták, alapelemek</h4>
+<p>Csak az év megadása: {{datumErtek | date:'YYYY'}}</p>
+<p>Csak a hónap megadása: {{datumErtek | date:'MM'}}</p>
+<p>Csak a nap megadása: {{datumErtek | date:'dd'}}</p>
+<p>Csak a nap megadása névvel {{datumErtek | date:'EEEE'}}</p>
+<p>Csak az év megadása: {{datumErtek | date:'YYYY.MM.dd'}}</p>
+<p>Csak az óra megadása: {{datumErtek | date:'hh'}}</p>
+<p>Csak a perc megadása: {{datumErtek | date:'mm'}}</p>
+<p>Csak a másodperc megadása: {{datumErtek | date:'ss'}}</p>
+<p>Óra perc másodperc megadása: {{datumErtek | date:'hh:mm:ss'}}</p>
