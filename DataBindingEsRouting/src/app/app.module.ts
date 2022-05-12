@@ -8,6 +8,7 @@ import { FeladatComponent } from './feladat/feladat.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { FormsModule } from '@angular/forms';
 import { PipesComponent } from './pipes/pipes.component';
+import { AdatfeldolgozasComponent } from './adatfeldolgozas/adatfeldolgozas.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PipesComponent } from './pipes/pipes.component';
     MintaComponent,
     FeladatComponent,
     NotfoundComponent,
-    PipesComponent
+    PipesComponent,
+    AdatfeldolgozasComponent
   ],
   imports: [
     BrowserModule,
