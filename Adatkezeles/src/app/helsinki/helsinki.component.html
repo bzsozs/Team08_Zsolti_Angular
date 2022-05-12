@@ -8,3 +8,30 @@
 
     </li>
 </ul>
+
+<button type="button" class="btn btn-primary">Tesztgomb</button>
+<div>
+
+    <table class="table table-dark table-striped table-hover text-center">
+        <thead>
+            <tr>
+                <th>Helyezés</th>
+                <th>Csapatméret</th>
+                <th>Sportág</th>
+                <th>Versenyszám</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let eredmeny of helsinkiEredmenyek">
+                <td>{{eredmeny.helyezes}}</td>
+                <td>{{eredmeny.csapatMeret}}</td>
+                <td>{{eredmeny.sportag}}</td>
+                <td>{{eredmeny.versenySzam}}</td>
+
+
+            </tr>
+        </tbody>
+
+
+    </table>
+</div>
