@@ -1,15 +1,46 @@
-<p>Helsinki feladatsor adatai</p>
+<h2 style="text-align:center;">Helsinki feladatsor adatai</h2>
 
-<ul>
+<!-- <ul>
 
     <li *ngFor="let eredmeny of helsinkiEredmenyek">
         {{eredmeny.helyezes}}. hely ( {{eredmeny.csapatMeret}}fő ) {{eredmeny.sportag}} - {{eredmeny.versenySzam}}
 
 
     </li>
-</ul>
+</ul> -->
 
-<button type="button" class="btn btn-primary">Tesztgomb</button>
+<!-- <button type="button" class="btn btn-primary">Tesztgomb</button> -->
+<h2>Új adat megadása</h2>
+<form style="width:800px; margin:50px auto;">
+    <div class="form-floating m-3">
+
+        <select class="form-select" id="floatSelect">
+
+            <option value="1">Arany</option>
+            <option value="2">Ezüsty</option>
+            <option value="3">Bronz</option>
+            <option value="4">4. hely</option>
+            <option value="5">5. hely</option>
+            <option value="6">6. hely</option>
+        </select>
+        <label for="floatSelect">Versenyző helyezése</label>
+    </div>
+
+
+    <div class="form-floating m-3">
+        <select class="form-select" id="meretSelect">
+
+            <option *ngFor="let meret of CsapatMeretOpciok" value="{{meret}}">
+                {{meret}} fő
+            </option>
+
+        </select>
+        <label for="meretSelect">Csapat mérete(fő)</label>
+    </div>
+
+</form>
+
+
 <div>
 
     <table class="table table-dark table-striped table-hover text-center">

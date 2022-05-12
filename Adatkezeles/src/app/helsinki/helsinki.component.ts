@@ -90,7 +90,19 @@ export class HelsinkiComponent implements OnInit {
   }
 
   helsinkiEredmenyek = this.ObjektumFeltolto(this.eredmenyek);
+
+  CsapatMeret(minCsapatMeret: number, maxCsapatMeret: number): number[] {
+    const CsapatMeretek: number[] = [];
+    for (let aktCsapatMeret = minCsapatMeret; aktCsapatMeret <= maxCsapatMeret; aktCsapatMeret++) {
+      CsapatMeretek.push(aktCsapatMeret);
+    }
+    return CsapatMeretek;
+  }
+  CsapatMeretOpciok = this.CsapatMeret(1, 20);
 }
+
+
+
 
 export interface Eredmenyek {
   helyezes: number;
