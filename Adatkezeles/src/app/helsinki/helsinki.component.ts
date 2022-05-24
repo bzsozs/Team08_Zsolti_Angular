@@ -106,6 +106,7 @@ export class HelsinkiComponent implements OnInit {
 
 
 
+
 export interface Eredmenyek {
   helyezes: number;
   csapatMeret: number;
