@@ -7,17 +7,20 @@ import { JqueryComponent } from './jquery/jquery.component';
 import { TablaComponent } from './tabla/tabla.component';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { EletciklusComponent } from './eletciklus/eletciklus.component';
 @NgModule({
   declarations: [
     AppComponent,
     JqueryComponent,
-    TablaComponent
+    TablaComponent,
+    EletciklusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     Ng2SearchPipeModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

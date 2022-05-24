@@ -1,0 +1,7 @@
+<h2>Angular életciklus futtatási időpontja</h2>
+
+<label for="valtozoMezo">Változó mező</label>
+<input type="text" [(ngModel)]="valtozo" id="valtozoMezo" value="10">
+{{valtozo}}
+<button type="button" class="btn btn-primary" (click)="oldalUjraToltes">Weboldal ujratöltése</button>
+<button type="button" class="btn btn-danger" (click)="elemTorlese">Componens elemének törlése</button>

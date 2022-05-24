@@ -39,7 +39,11 @@
     </div>
 
 </form>
-
+<div class="form-group">
+    <label for="tablazatSzuroFeltetel">Táblázat szűrése</label>
+    <input type="text" id="tablazatSzuroFeltetel" class="form-control mb-2" placeholder="Keresés"
+        [(ngModel)]="tablazatSzuro">
+</div>
 
 <div>
 
@@ -53,7 +57,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let eredmeny of helsinkiEredmenyek">
+            <tr *ngFor="let eredmeny of helsinkiEredmenyek | filter:tablazatSzuro">
                 <td>{{eredmeny.helyezes}}</td>
                 <td>{{eredmeny.csapatMeret}}</td>
                 <td>{{eredmeny.sportag}}</td>
